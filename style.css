@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+width: 100vw;
+height: 100vh;
+background-color: rgb(236, 234, 234);
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.header{
+width: 100%;
+display: flex;
+ flex-direction: row;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+border-top: 0;
+border-bottom: 1px;
+border-style: solid;
+border-color: rgb(194, 191, 188);
+
+}
+
+.aside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+
+}
+.aside h1{
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 20px;
+  
+}
+
+.aside h2 {
+  font-size: 42px;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.aside span{
+  font-size: 42px;
+  font-weight: 800;
+  font-style: normal;
+
+}
+
+.aside h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+
+
+main{
+
+  max-width: 100vw;
+  display: grid;
+
+
+  padding-left: 100px;
+  grid-template-columns: repeat(12,1fr);
+  padding-right: 100px;
+
+  background-color: rgb(236, 234, 234);
+ 
+}
+
+.PANCAKES {
+  grid-column: 3 / 8;
+  grid-row: 1;
+  max-width: 100%;
+}
+
+.PANCAKES img, .breakfast img, .dinner img, .lunch img {
+  width: 100%;
+  height: 100%;
+}
+
+.vegan  {
+  grid-column: 8 / 11;
+  grid-row: 1;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+
+
+}
+
+.vegan img.arrow{
+padding-left: 100px;
+
+
+}
+
+.breakfast {
+  display: grid;
+  grid-column: 3 / 5;
+  grid-row: 2;
+  margin-top: 20px;
+  background-color: white;
+  
+}
+
+.lunch {
+  display: grid;
+  grid-column: 6 /8 ;
+  grid-row: 2;
+  margin-top: 20px;
+  background-color: white;
+  
+}
+
+.dinner {
+  display: grid;
+  grid-column: 9/11 ;
+  grid-row: 2;
+  margin-top: 20px;
+  background-color: #FFE350;
+
+}
+
+
+
+
+
+
+.vegan h1{
+  font-style: italic;
+  font-size: 14px;
+}
+
+.vegan p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.vegan h2{
+  font-size: 12px;
+}
+
+
+.breakfast p , .lunch p {
+  font-size: 12px;
+  margin-left: 1rem;
+
+}
+
+.breakfast h1, .lunch h1 {
+  font-size: 17px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.dinner h1 {
+
+  font-size: 24px;
+  margin-top: 2rem ;
+margin-left: 1rem;
+ 
+
+}
+.dinner p {
+
+  font-size: 14px;
+  margin-top: 2rem ;
+  margin-left: 1rem;
+}
+
+.flex-main-button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+}
+.main-button{
+  padding: 24px 48px 24px 48px;
+ border-radius: 51px;
+ border-style: solid;
+ border-color: black;
+ font-size: 16px;
+  
+}
+
+.grid-rounded-main{
+  max-width: 100vw;
+  display: grid;
+
+
+  padding-left: 100px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  padding-right: 100px;
+  margin-bottom: 5rem;
+
+}
+
+.dessert{
+ 
+    display: grid;
+    grid-column: 3/4 ;
+    padding-left: 5rem;
+
+}
+
+.smoothies{
+ 
+  display: grid;
+  grid-column: 5/6 ;
+
+
+}
+
+.special{
+ 
+  display: grid;
+  grid-column: 7/8 ;
+
+}
+
+.burger{
+ 
+  display: grid;
+  grid-column: 9/10 ;
+  padding-right: 5rem;
+
+}
+
+.text1 h1 {
+  font-size: 14px;
+}
+.text1 p {
+  font-size: 42px;
+}
+.text1 h2 {
+  font-size: 24px;
+
+}
+
+
+.magic {
+
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  padding-bottom: 5rem;
+}
+
+
+
+.text2 {
+  padding-left: 5rem;
+  padding-top: 50%;
+  padding-right: 2rem;
+  grid-row: 1;
+  grid-column: 5/7;
+}
+
+.text1{
+
+
+  display: grid;
+  grid-column: 2/5;
+  grid-row: 1;
+
+}
+
+.magic span{
+  font-weight: 800;
+}
+
+.magic p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.text1 {
+  position: relative;
+  /* resten av dina stilar */
+}
+
+.text1::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-image: url(bruno.png);
+  background-size: cover;
+  position: absolute;
+  right: 0;
+}
+
+
+.text1 h1, .text1 p, .text1 h2 {
+  position: relative;
+  z-index: 2;
+}
+
+
+.menu-button{
+ 
+    padding: 24px 48px 24px 48px;
+   border-radius: 51px;
+   border-style: solid;
+   border-color: black;
+   font-size: 16px;
+   background-color: #FFE350;
+   margin-bottom: 5rem;
+   margin-top: 5rem;
+
+  
+}
+
+.footer{
+  
+  background-image: url(footer.png);
+  background-size: 50% ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  
+}
+
+.footer h1{
+  color: white;
+}
+
+.footer p{
+  color: white;
+}
+
+.next{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.next h1{
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
